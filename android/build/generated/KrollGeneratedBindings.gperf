@@ -1,0 +1,18 @@
+%define lookup-function-name lookupGeneratedInit
+%define class-name UdpBindings
+%{
+
+#include <string.h>
+#include <v8.h>
+#include <KrollBindings.h>
+
+#include "ti.udp.UdpModule.h"
+#include "ti.udp.SocketProxy.h"
+
+
+%}
+struct titanium::bindings::BindEntry;
+%%
+ti.udp.UdpModule, ::ti::udp::UdpModule::bindProxy, ::ti::udp::UdpModule::dispose
+ti.udp.SocketProxy, ::ti::udp::udp::SocketProxy::bindProxy, ::ti::udp::udp::SocketProxy::dispose
+%%
