@@ -53,7 +53,7 @@ public class SocketProxy extends KrollProxy {
 		stop();
 		super.finalize();
 	}
-
+	
 	public String getLocalIpAddress() {
 		try {
 			for (Enumeration<NetworkInterface> en = NetworkInterface.getNetworkInterfaces(); en.hasMoreElements();) {
@@ -242,5 +242,5 @@ public class SocketProxy extends KrollProxy {
 	}
 
 	// End Public API
-
+	
 }

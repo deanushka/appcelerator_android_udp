@@ -14,11 +14,10 @@ win.open();
 
 // TODO: write your module tests here
 var udp = require('ti.udp');
-Ti.API.info("module is => " + udp);
+// Ti.APi.info("module is => " + udp);
 
 label.text = udp.example();
-
-Ti.API.info("module exampleProp is => " + udp.exampleProp);
+// Ti.APi.info("module exampleProp is => " + udp.exampleProp);
 udp.exampleProp = "This is a test value";
 
 if (Ti.Platform.name == "android") {
